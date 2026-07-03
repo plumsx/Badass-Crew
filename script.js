@@ -1,27 +1,33 @@
 const CONFIG = {
+  website: 'https://badass-crew.netlify.app/',
   discordInvite: 'https://discord.gg/4djd8aVTCr',
-  instagram: 'https://www.instagram.com/badxass_crew?igsh=dHUxNDdqbnhrd3Fq',
-  youtube: 'https://youtube.com/@bdss343?si=A-qacQGp3ldYTy_J',
+  instagram: 'https://www.instagram.com/badxass_crew/',
+  youtube: 'https://www.youtube.com/@BDss343',
   discordWebhookUrl: '' // niemals einen geheimen Discord-Webhook direkt im Frontend speichern
 };
 
 const I18N = {
   de: {
-    introText:'Badass Crew wird geladen', navHome:'Home', navAlliance:'Allianz', navDashboard:'Dashboard', navMembers:'Mitglieder', navNews:'News', navGallery:'Galerie', navCalendar:'Kalender', navApply:'Bewerben',
+    introText:'Badass Crew wird geladen', navHome:'Home', navAlliance:'Allianz', navDashboard:'Dashboard', navMembers:'Team', navNews:'News', navGallery:'Galerie', navCalendar:'Kalender', navApply:'Bewerben',
     heroLead:'Aktive Allianz, klare Kommunikation und starker Zusammenhalt. Wachse mit uns, kämpfe mit uns und dominiere Events gemeinsam mit der Crew.', applyNow:'Jetzt bewerben',
     value1Title:'Aktive Allianz', value1Text:'Gemeinsam stark, gemeinsam siegreich.', value2Title:'Teamplay', value2Text:'Zusammenhalt und Unterstützung stehen bei uns vorne.', value3Title:'Events', value3Text:'Regelmäßige Aktionen und Belohnungen.', value4Title:'Wachstum', value4Text:'Wir wachsen weiter und erreichen gemeinsame Ziele.', value5Title:'Real Life geht vor', value5Text:'Spaß am Spiel, aber Respekt vor deinem Alltag.',
-    aboutEyebrow:'Über uns', aboutTitle:'Eine Crew. Ein Ziel.', aboutText:'BDss ist für Spieler, die aktiv sind, mitdenken und nicht nur nebenbei in einer Allianz sitzen wollen. Wir setzen auf Respekt, Unterstützung, klare Ansagen und gemeinsame Entwicklung.', expectTitle:'Was dich erwartet', expect1:'Aktive Allianz-Events', expect2:'Discord-Community', expect3:'Hilfe beim Wachstum', expect4:'Faire und verständliche Regeln', dashTitle:'Allianz-Dashboard', membersActive:'Aktive Spieler', nextEvent:'Nächstes Event', membersEyebrow:'Crew-Struktur', membersTitle:'Führung & Rollen', newsTitle:'Aktuelle Meldungen', galleryEyebrow:'Galerie', galleryTitle:'BDss Grafiken', galleryText:'Neue Bilder kannst du später im Ordner assets ergänzen und in script.js in die Galerie-Liste eintragen.', videoTitle:'BDss Video Hub', openYoutube:'YouTube öffnen', discordTitle:'Werde Teil der Crew', discordText:'Live-Status ist vorbereitet. Sobald euer Discord-Server-Widget aktiviert ist, kann hier ein echtes Widget eingebunden werden.', joinNow:'Beitreten →', calendarEyebrow:'Event-Kalender', calendarTitle:'Nächste Termine', applyEyebrow:'Bewerbung', applyTitle:'Bewirb dich bei BDss', applyText:'Das Formular erstellt eine fertige Bewerbung. Ohne sicheren Discord-Backend-Endpunkt wird der Text kopiert, damit du ihn direkt im Discord senden kannst.', formName:'Spielername', formPower:'Power / Stärke', formDiscord:'Discord-Name', formLanguage:'Sprache', formMessage:'Warum BDss?', formSend:'Bewerbung vorbereiten', formNote:'Tipp: Danach direkt im Discord melden.'
+    aboutEyebrow:'Über uns', aboutTitle:'Eine Crew. Ein Ziel.', aboutText:'BDss ist für Spieler, die aktiv sind, mitdenken und nicht nur nebenbei in einer Allianz sitzen wollen. Wir setzen auf Respekt, Unterstützung, klare Ansagen und gemeinsame Entwicklung.', expectTitle:'Was dich erwartet', expect1:'Aktive Allianz-Events', expect2:'Discord-Community', expect3:'Hilfe beim Wachstum', expect4:'Faire und verständliche Regeln', dashTitle:'Allianz-Dashboard', membersActive:'Aktive Spieler', nextEvent:'Nächstes Event', membersEyebrow:'Crew-Struktur', membersTitle:'Team & R5-Ebene', newsTitle:'Aktuelle Meldungen', galleryEyebrow:'Galerie', galleryTitle:'BDss Grafiken', galleryText:'Neue Bilder kannst du später im Ordner assets ergänzen und in script.js in die Galerie-Liste eintragen.', videoTitle:'BDss Video Hub', openYoutube:'YouTube öffnen', discordTitle:'Werde Teil der Crew', discordText:'Live-Status ist vorbereitet. Sobald euer Discord-Server-Widget aktiviert ist, kann hier ein echtes Widget eingebunden werden.', joinNow:'Beitreten →', calendarEyebrow:'Event-Kalender', calendarTitle:'Nächste Termine', applyEyebrow:'Bewerbung', applyTitle:'Bewirb dich bei BDss', applyText:'Das Formular erstellt eine fertige Bewerbung. Ohne sicheren Discord-Backend-Endpunkt wird der Text kopiert, damit du ihn direkt im Discord senden kannst.', formName:'Spielername', formPower:'Power / Stärke', formDiscord:'Discord-Name', formLanguage:'Sprache', formMessage:'Warum BDss?', formSend:'Bewerbung vorbereiten', formNote:'Tipp: Danach direkt im Discord melden.'
   },
   en: {
-    introText:'Badass Crew loading', navHome:'Home', navAlliance:'Alliance', navDashboard:'Dashboard', navMembers:'Members', navNews:'News', navGallery:'Gallery', navCalendar:'Calendar', navApply:'Apply',
+    introText:'Badass Crew loading', navHome:'Home', navAlliance:'Alliance', navDashboard:'Dashboard', navMembers:'Team', navNews:'News', navGallery:'Gallery', navCalendar:'Calendar', navApply:'Apply',
     heroLead:'Active alliance, clear communication and strong teamwork. Grow with us, fight with us and dominate events together with the crew.', applyNow:'Apply now',
     value1Title:'Active alliance', value1Text:'Strong together, victorious together.', value2Title:'Teamplay', value2Text:'Support and unity come first.', value3Title:'Events', value3Text:'Regular action and rewards.', value4Title:'Growth', value4Text:'We keep growing and reach our goals together.', value5Title:'Real life first', value5Text:'Enjoy the game, respect your daily life.',
-    aboutEyebrow:'About us', aboutTitle:'One crew. One goal.', aboutText:'BDss is for active players who communicate, support each other and want more than just a place in an alliance.', expectTitle:'What you get', expect1:'Active alliance events', expect2:'Discord community', expect3:'Growth support', expect4:'Fair and clear rules', dashTitle:'Alliance dashboard', membersActive:'Active players', nextEvent:'Next event', membersEyebrow:'Crew structure', membersTitle:'Leadership & roles', newsTitle:'Latest updates', galleryEyebrow:'Gallery', galleryTitle:'BDss graphics', galleryText:'Add new images to the assets folder and list them in script.js later.', videoTitle:'BDss video hub', openYoutube:'Open YouTube', discordTitle:'Join the crew', discordText:'Live status is prepared. Once the Discord server widget is enabled, a real widget can be embedded here.', joinNow:'Join →', calendarEyebrow:'Event calendar', calendarTitle:'Upcoming dates', applyEyebrow:'Application', applyTitle:'Apply to BDss', applyText:'The form prepares your application. Without a secure Discord backend endpoint, the text is copied so you can post it in Discord.', formName:'Player name', formPower:'Power', formDiscord:'Discord name', formLanguage:'Language', formMessage:'Why BDss?', formSend:'Prepare application', formNote:'Tip: Contact us on Discord afterwards.'
+    aboutEyebrow:'About us', aboutTitle:'One crew. One goal.', aboutText:'BDss is for active players who communicate, support each other and want more than just a place in an alliance.', expectTitle:'What you get', expect1:'Active alliance events', expect2:'Discord community', expect3:'Growth support', expect4:'Fair and clear rules', dashTitle:'Alliance dashboard', membersActive:'Active players', nextEvent:'Next event', membersEyebrow:'Crew structure', membersTitle:'Team & R5 level', newsTitle:'Latest updates', galleryEyebrow:'Gallery', galleryTitle:'BDss graphics', galleryText:'Add new images to the assets folder and list them in script.js later.', videoTitle:'BDss video hub', openYoutube:'Open YouTube', discordTitle:'Join the crew', discordText:'Live status is prepared. Once the Discord server widget is enabled, a real widget can be embedded here.', joinNow:'Join →', calendarEyebrow:'Event calendar', calendarTitle:'Upcoming dates', applyEyebrow:'Application', applyTitle:'Apply to BDss', applyText:'The form prepares your application. Without a secure Discord backend endpoint, the text is copied so you can post it in Discord.', formName:'Player name', formPower:'Power', formDiscord:'Discord name', formLanguage:'Language', formMessage:'Why BDss?', formSend:'Prepare application', formNote:'Tip: Contact us on Discord afterwards.'
   }
 };
 
 const intro = document.getElementById('intro');
 window.addEventListener('load', () => setTimeout(() => intro.classList.add('hide'), 1700));
+
+document.querySelectorAll('[data-social]').forEach(link => {
+  const target = CONFIG[link.dataset.social];
+  if(target) link.href = target;
+});
 
 const menuBtn = document.querySelector('.menu-btn');
 const nav = document.querySelector('.nav');
@@ -61,12 +67,83 @@ const events = [
 document.getElementById('eventList').innerHTML = events.map(e => `<article class="event"><b>${e.date}</b><h3>${e.title}</h3><p>${e.text}</p></article>`).join('');
 
 const members = [
-  {name:'Leader', role:'R5 / Leitung', icon:'👑'},
-  {name:'Officer Team', role:'R4 / Organisation', icon:'🛡'},
-  {name:'Event Leads', role:'Planung & Kampf', icon:'⚔'},
-  {name:'BDss Crew', role:'Aktive Mitglieder', icon:'🔥'}
+  {name:'R5 Ebene', role:'3 Leader', icon:'👑', text:'Direkt zum Teambereich mit der R5-Führung springen.', target:'r5-team', action:'R5 Leader anzeigen'},
+  {name:'Officer Team', role:'R4 / Organisation', icon:'🛡', text:'Organisation, Ansagen und Unterstützung für die Crew.'},
+  {name:'Event Leads', role:'Planung & Kampf', icon:'⚔', text:'Koordination für Events, Ziele und gemeinsame Kämpfe.'},
+  {name:'BDss Crew', role:'Aktive Mitglieder', icon:'🔥', text:'Aktive Spieler, Wachstum, Hilfe und Teamplay.'}
 ];
-document.getElementById('memberGrid').innerHTML = members.map(m => `<article class="member-card"><div class="avatar">${m.icon}</div><h3>${m.name}</h3><p class="role">${m.role}</p><p>Platzhalter – Namen und Avatare können später ergänzt werden.</p></article>`).join('');
+document.getElementById('memberGrid').innerHTML = members.map(m => {
+  const content = `<div class="avatar">${m.icon}</div><h3>${m.name}</h3><p class="role">${m.role}</p><p>${m.text}</p>${m.action ? `<span class="member-action">${m.action}</span>` : ''}`;
+  return m.target ? `<button class="member-card member-link" type="button" data-target="${m.target}">${content}</button>` : `<article class="member-card">${content}</article>`;
+}).join('');
+document.querySelectorAll('[data-target]').forEach(button => {
+  button.addEventListener('click', () => {
+    const target = document.getElementById(button.dataset.target);
+    if(!target) return;
+    const top = target.getBoundingClientRect().top + window.scrollY - 104;
+    window.history.replaceState(null, '', `#${target.id}`);
+    window.scrollTo({top, behavior:'smooth'});
+  });
+});
+
+const r5Leaders = [
+  {
+    name:'ᴷⁱⁿᵍ乂Plums乂ᴮᴰˢˢ',
+    title:'Erster Leader · Serverleitung · Großkönig',
+    power:'ca. 90 Mio Power',
+    media:'assets/plums-profile.mp4',
+    mediaType:'video',
+    text:'R5-Leitung von BDss auf Server 343. Fokus auf klare Ansagen, starke Präsenz und eine Crew, die geschlossen wächst.'
+  },
+  {
+    name:'PW Nospang',
+    title:'Zweiter Leader · PWB-Gründer · Stamm-Legende',
+    power:'ca. 60 Mio Power',
+    media:'assets/nospang-profile.png',
+    mediaType:'image',
+    text:'Unsere gute Seele und derjenige, der die Waage hält. Ruhiger Pol, Stamm-Legende und verlässliche R5-Stimme für BDss.'
+  },
+  {
+    name:'ʊKillerTwixʊᴿᴴ',
+    title:'Dritter Leader · Kriegs-Titan · Angriffs-Stratege',
+    power:'ca. 186 Mio Power',
+    media:'assets/killertwix-profile.png',
+    mediaType:'image',
+    text:'Das Schwert der Allianz. Angriffsstark, fokussiert und die R5-Stimme, wenn BDss in den Kampf zieht.'
+  }
+];
+document.getElementById('r5-team').innerHTML = `
+  <div class="r5-head">
+    <p class="eyebrow">R5 Ebene</p>
+    <h3>Die 3 Leader</h3>
+  </div>
+  <div class="r5-grid">
+    ${r5Leaders.map((leader, index) => `
+      <article class="r5-card ${index === 0 ? 'r5-card-featured' : ''}">
+        ${leader.media ? `
+          <div class="profile-media-wrap profile-round">
+            ${leader.mediaType === 'image'
+              ? `<img class="profile-media profile-image" src="${leader.media}" alt="Profilbild und Rahmen von ${leader.name}">`
+              : `<video class="profile-media profile-video" src="${leader.media}" autoplay muted loop playsinline preload="metadata" aria-label="Animiertes Profilbild von ${leader.name}"></video>`
+            }
+          </div>
+        ` : `<div class="avatar leader-slot">👑</div>`}
+        <div class="r5-copy">
+          <span class="r5-rank">${leader.title}</span>
+          <h4>${leader.name}</h4>
+          <strong>${leader.power}</strong>
+          <p>${leader.text}</p>
+        </div>
+      </article>
+    `).join('')}
+  </div>
+`;
+document.querySelectorAll('.profile-video').forEach(video => {
+  video.muted = true;
+  const playProfile = () => video.play().catch(() => {});
+  if(video.readyState >= 2) playProfile();
+  else video.addEventListener('loadeddata', playProfile, {once:true});
+});
 
 const news = [
   {date:'Heute', title:'Website 3.0 online', text:'Neues Design mit Dashboard, News, Galerie, Formular und Sprachumschalter.'},

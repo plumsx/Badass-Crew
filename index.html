@@ -9,10 +9,13 @@
   <meta property="og:title" content="BDss Badass Crew | Server 343" />
   <meta property="og:description" content="Werde Teil der BDss Badass Crew. Aktiv, stark, respektvoll und gemeinsam siegreich." />
   <meta property="og:image" content="banner.jpg" />
+  <meta property="og:url" content="https://badass-crew.netlify.app/" />
+  <link rel="canonical" href="https://badass-crew.netlify.app/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile-hero.css" />
 </head>
 <body>
   <div id="intro" class="intro" aria-label="BDss Intro">
@@ -35,7 +38,7 @@
       <a href="#home" data-i18n="navHome">Home</a>
       <a href="#alliance" data-i18n="navAlliance">Allianz</a>
       <a href="#dashboard" data-i18n="navDashboard">Dashboard</a>
-      <a href="#members" data-i18n="navMembers">Mitglieder</a>
+      <a href="#members" data-i18n="navMembers">Team</a>
       <a href="#news" data-i18n="navNews">News</a>
       <a href="#gallery" data-i18n="navGallery">Galerie</a>
       <a href="#calendar" data-i18n="navCalendar">Kalender</a>
@@ -54,11 +57,12 @@
         <p class="lead" data-i18n="heroLead">Aktive Allianz, klare Kommunikation und starker Zusammenhalt. Wachse mit uns, kämpfe mit uns und dominiere Events gemeinsam mit der Crew.</p>
         <div class="actions">
           <a class="btn primary" href="#apply" data-i18n="applyNow">Jetzt bewerben</a>
-          <a class="btn ghost" href="https://discord.gg/4djd8aVTCr" target="_blank" rel="noreferrer">Discord</a>
+          <a class="btn ghost" href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a>
         </div>
         <div class="social-mini">
-          <a href="https://www.instagram.com/badxass_crew?igsh=dHUxNDdqbnhrd3Fq" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://youtube.com/@bdss343?si=A-qacQGp3ldYTy_J" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://badass-crew.netlify.app/" data-social="website" target="_blank" rel="noreferrer">Website</a>
+          <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a>
         </div>
       </div>
       <div class="hero-card tilt reveal" data-depth="0.18">
@@ -105,8 +109,9 @@
 
     <section id="members" class="members reveal">
       <p class="eyebrow" data-i18n="membersEyebrow">Crew-Struktur</p>
-      <h2 data-i18n="membersTitle">Führung & Rollen</h2>
+      <h2 data-i18n="membersTitle">Team & R5-Ebene</h2>
       <div class="member-grid" id="memberGrid"></div>
+      <div class="r5-team" id="r5-team" aria-label="R5 Leader Ebene"></div>
     </section>
 
     <section id="news" class="news reveal">
@@ -126,7 +131,7 @@
       <p class="eyebrow">YouTube</p>
       <h2 data-i18n="videoTitle">BDss Video Hub</h2>
       <div class="video-shell"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bdss343" title="BDss YouTube Videos" loading="lazy" allowfullscreen></iframe></div>
-      <a class="btn ghost" href="https://youtube.com/@bdss343?si=A-qacQGp3ldYTy_J" target="_blank" rel="noreferrer" data-i18n="openYoutube">YouTube öffnen</a>
+      <a class="btn ghost" href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer" data-i18n="openYoutube">YouTube öffnen</a>
     </section>
 
     <section class="discord reveal">
@@ -135,7 +140,7 @@
         <h2 data-i18n="discordTitle">Werde Teil der Crew</h2>
         <p data-i18n="discordText">Live-Status ist vorbereitet. Sobald euer Discord-Server-Widget aktiviert ist, kann hier ein echtes Widget eingebunden werden.</p>
       </div>
-      <a class="discord-card hover-card" href="https://discord.gg/4djd8aVTCr" target="_blank" rel="noreferrer"><strong>BDss Discord</strong><span data-i18n="joinNow">Beitreten →</span></a>
+      <a class="discord-card hover-card" href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer"><strong>BDss Discord</strong><span data-i18n="joinNow">Beitreten →</span></a>
     </section>
 
     <section id="calendar" class="calendar reveal">
@@ -150,9 +155,9 @@
         <h2 data-i18n="applyTitle">Bewirb dich bei BDss</h2>
         <p data-i18n="applyText">Das Formular erstellt eine fertige Bewerbung. Ohne sicheren Discord-Backend-Endpunkt wird der Text kopiert, damit du ihn direkt im Discord senden kannst.</p>
         <div class="contact-buttons">
-          <a href="https://discord.gg/4djd8aVTCr" target="_blank" rel="noreferrer">Discord</a>
-          <a href="https://www.instagram.com/badxass_crew?igsh=dHUxNDdqbnhrd3Fq" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://youtube.com/@bdss343?si=A-qacQGp3ldYTy_J" target="_blank" rel="noreferrer">YouTube</a>
+          <a href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a>
+          <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a>
         </div>
       </div>
       <form class="apply-form" id="applyForm">
@@ -169,7 +174,16 @@
 
   <div class="lightbox" id="lightbox" aria-hidden="true"><button aria-label="Schließen">×</button><img alt="Galeriebild"></div>
   <button id="backTop" class="back-top" aria-label="Zurück nach oben">↑</button>
-  <footer><strong>BDss Badass Crew</strong><span>Server 343 · Discord · Instagram · YouTube</span></footer>
+  <footer>
+    <strong>BDss Badass Crew</strong>
+    <span>
+      Server 343 ·
+      <a href="https://badass-crew.netlify.app/" data-social="website" target="_blank" rel="noreferrer">Website</a> ·
+      <a href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a> ·
+      <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a> ·
+      <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a>
+    </span>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
