@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BDss Badass Crew | Server 343</title>
+  <meta name="description" content="BDss Badass Crew – aktive Call of Dragons Allianz auf Server 343. Wir suchen aktive Spieler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader" id="loader"><img src="assets/banner.jpg" alt="BDss Logo"><strong>BDss</strong><span>Badass Crew lädt...</span></div>
+  <canvas id="particles"></canvas>
+  <header class="header">
+    <a class="logo" href="#home"><img src="assets/banner.jpg" alt="BDss"><span>BDss</span></a>
+    <button class="menu" id="menu" aria-label="Menü öffnen">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#about">Über uns</a><a href="#events">Events</a><a href="#gallery">Galerie</a><a href="#apply">Bewerbung</a><a class="join" href="https://discord.gg/4djd8aVTCr" target="_blank" rel="noreferrer">Discord</a>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="heroText reveal">
+        <p class="tag">Call of Dragons · Server 343</p>
+        <h1><span>BDss</span> Badass Crew</h1>
+        <p class="lead">Wir suchen aktive Spieler. Gemeinsam stark, gemeinsam erfolgreich. Teamplay, Events und Wachstum stehen bei uns im Mittelpunkt.</p>
+        <div class="buttons"><a class="btn primary" href="#apply">Jetzt bewerben</a><a class="btn" href="#about">Mehr erfahren</a></div>
+      </div>
+      <div class="heroImage reveal"><img src="assets/recruiting.png" alt="BDss Recruiting Grafik"></div>
+    </section>
+    <section class="features reveal">
+      <article><b>⚔</b><h3>Aktive Allianz</h3><p>Regelmäßige Aktivität, klare Ziele und gemeinsamer Fortschritt.</p></article>
+      <article><b>👥</b><h3>Teamplay</h3><p>Zusammenhalt und Unterstützung stehen bei uns an erster Stelle.</p></article>
+      <article><b>🛡</b><h3>Events</h3><p>Gemeinsame Events und Belohnungen für aktive Spieler.</p></article>
+      <article><b>🤝</b><h3>Wachstum</h3><p>Wir wachsen weiter und erreichen gemeinsam unsere Ziele.</p></article>
+    </section>
+    <section id="about" class="split reveal">
+      <div><p class="tag">Über uns</p><h2>BDss Badass Crew</h2><p>Wir sind eine aktive Allianz auf Server 343 in Call of Dragons. Bei uns zählen Aktivität, Respekt, Kommunikation und Spaß am Spiel. Real Life geht vor – aber wer online ist, spielt mit der Crew.</p></div>
+      <div class="panel"><h3>Was wir bieten</h3><ul><li>Aktive Allianz und Discord-Community</li><li>Events, Wachstum und Unterstützung</li><li>Klare Regeln und faire Kommunikation</li><li>Direkte Kontaktwege über Discord und Instagram</li></ul></div>
+    </section>
+    <section id="events" class="cards reveal"><p class="tag">Allianzleben</p><h2>Events & Ziele</h2><div class="cardGrid"><article><h3>Allianz-Events</h3><p>Regelmäßige Teilnahme und gemeinsame Belohnungen.</p></article><article><h3>Aufbau</h3><p>Hilfe beim Wachstum, Tipps und Unterstützung.</p></article><article><h3>Koordination</h3><p>Absprachen über Discord, damit alle informiert sind.</p></article></div></section>
+    <section id="gallery" class="gallery reveal"><p class="tag">Galerie</p><h2>Unsere Grafiken</h2><div class="galleryGrid"><img src="assets/recruiting.png" alt="Recruiting Grafik"><img src="assets/banner.jpg" alt="BDss Banner"></div></section>
+    <section class="social reveal"><h2>Folge uns</h2><div class="buttons"><a class="btn primary" href="https://discord.gg/4djd8aVTCr" target="_blank" rel="noreferrer">Discord</a><a class="btn" href="https://www.instagram.com/badxass_crew?igsh=dHUxNDdqbnhrd3Fq" target="_blank" rel="noreferrer">Instagram</a><a class="btn" href="https://youtube.com/@bdss343?si=A-qacQGp3ldYTy_J" target="_blank" rel="noreferrer">YouTube</a></div></section>
+    <section id="apply" class="apply reveal"><div><p class="tag">Bewerbung</p><h2>Werde Teil der Crew</h2><p>Fülle das Formular aus. Deine Bewerbung wird als Text vorbereitet, damit du sie direkt im Discord posten kannst.</p></div><form id="form"><label>Spielername<input name="name" required placeholder="Name im Spiel"></label><label>Power / Stärke<input name="power" placeholder="z. B. 12 Mio"></label><label>Discord-Name<input name="discord" placeholder="dein Discord-Name"></label><label>Warum BDss?<textarea name="message" rows="4" placeholder="Kurz vorstellen..."></textarea></label><button class="btn primary" type="submit">Bewerbung kopieren</button><p id="note">Danach im Discord einfügen.</p></form></section>
+  </main>
+  <button id="top" class="top">↑</button>
+  <footer><strong>BDss Badass Crew</strong><span>Server 343 · Call of Dragons</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
