@@ -36,11 +36,11 @@ addEventListener('scroll', () => backTop.classList.toggle('show', scrollY > 520)
 backTop.addEventListener('click', () => scrollTo({top:0,behavior:'smooth'}));
 
 const galleryImages = [
-  {src:'assets/recruiting.png', alt:'BDss Recruiting'},
-  {src:'assets/banner.jpg', alt:'BDss Banner'},
-  {src:'assets/recruiting.png', alt:'BDss Allianz Grafik'},
-  {src:'assets/banner.jpg', alt:'BDss Fantasy Banner'},
-  {src:'assets/recruiting.png', alt:'BDss Call of Dragons'}
+  {src:'recruiting.png', alt:'BDss Recruiting'},
+  {src:'banner.jpg', alt:'BDss Banner'},
+  {src:'recruiting.png', alt:'BDss Allianz Grafik'},
+  {src:'banner.jpg', alt:'BDss Fantasy Banner'},
+  {src:'recruiting.png', alt:'BDss Call of Dragons'}
 ];
 const galleryGrid = document.getElementById('galleryGrid');
 galleryImages.forEach(img => {
