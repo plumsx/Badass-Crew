@@ -1,0 +1,163 @@
+.nav a.active {
+  color: var(--green);
+  text-shadow: 0 0 16px var(--green);
+}
+
+.nav a.active:after {
+  transform: scaleX(1);
+}
+
+.page-main {
+  min-height: 100vh;
+  padding-top: 110px;
+}
+
+.page-hero {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto 46px;
+  padding: 72px 24px 36px;
+}
+
+.page-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0 24px auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+  box-shadow: var(--glow);
+}
+
+.page-hero h1 {
+  font-family: 'Bebas Neue';
+  font-size: clamp(58px, 10vw, 116px);
+  line-height: .9;
+  letter-spacing: 2px;
+  margin: 0 0 18px;
+}
+
+.page-hero p {
+  max-width: 780px;
+  font-size: 19px;
+}
+
+.page-shell {
+  max-width: 1220px;
+  margin: 0 auto 92px;
+  padding: 0 24px;
+}
+
+.hub-grid,
+.page-grid,
+.shop-grid,
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hub-card,
+.page-card {
+  display: block;
+  min-height: 210px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--panel2), #07090bdd);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 0 28px #000;
+  transition: .25s;
+}
+
+.hub-card:hover,
+.page-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--glow);
+}
+
+.hub-card span,
+.page-card span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--green);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hub-card h3,
+.page-card h3 {
+  margin-top: 0;
+}
+
+.section-band {
+  max-width: 1220px;
+  margin: 0 auto 92px;
+  padding: 38px 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #05060766;
+}
+
+.compact-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.site-header {
+  gap: 18px;
+}
+
+.nav {
+  gap: 10px;
+}
+
+.nav a {
+  font-size: 11px;
+}
+
+.nav-cta,
+.lang-toggle {
+  padding: 10px 13px;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  padding-bottom: 56px;
+}
+
+@media (max-width: 1280px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    background: #020403;
+    padding: 24px;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .hub-grid,
+  .page-grid,
+  .shop-grid,
+  .donation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding-top: 44px;
+  }
+}

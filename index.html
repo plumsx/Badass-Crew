@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BDss Badass Crew | Call of Dragons Server 343</title>
-  <meta name="description" content="BDss Badass Crew – aktive Call of Dragons Allianz auf Server 343. Teamplay, Events, Discord, Galerie, Bewerbung und News." />
+  <title>BDss Badass Crew | Startseite</title>
+  <meta name="description" content="BDss Badass Crew – Call of Dragons Allianz auf Server 343. Startseite mit Übersicht zu Team, Events, Bewerbung, Shop und Donations." />
   <meta name="theme-color" content="#8cff2a" />
   <meta property="og:title" content="BDss Badass Crew | Server 343" />
   <meta property="og:description" content="Werde Teil der BDss Badass Crew. Aktiv, stark, respektvoll und gemeinsam siegreich." />
@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="mobile-hero.css" />
+  <link rel="stylesheet" href="site-pages.css" />
 </head>
 <body>
   <div id="intro" class="intro" aria-label="BDss Intro">
@@ -32,32 +33,35 @@
   <div class="energy-lines" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Zur Startseite"><img src="banner.jpg" alt="BDss Logo"><span>BDss</span></a>
+    <a class="brand" href="index.html" aria-label="Zur Startseite"><img src="banner.jpg" alt="BDss Logo"><span>BDss</span></a>
     <button class="menu-btn" aria-label="Menü öffnen">☰</button>
     <nav class="nav" aria-label="Hauptnavigation">
-      <a href="#home" data-i18n="navHome">Home</a>
-      <a href="#alliance" data-i18n="navAlliance">Allianz</a>
-      <a href="#dashboard" data-i18n="navDashboard">Dashboard</a>
-      <a href="#members" data-i18n="navMembers">Team</a>
-      <a href="#news" data-i18n="navNews">News</a>
-      <a href="#gallery" data-i18n="navGallery">Galerie</a>
-      <a href="#calendar" data-i18n="navCalendar">Kalender</a>
-      <a href="#apply" class="nav-cta" data-i18n="navApply">Bewerben</a>
+      <a href="index.html" data-i18n="navHome">Start</a>
+      <a href="alliance.html" data-i18n="navAlliance">Allianz</a>
+      <a href="dashboard.html" data-i18n="navDashboard">Dashboard</a>
+      <a href="team.html" data-i18n="navMembers">Team</a>
+      <a href="news.html" data-i18n="navNews">News</a>
+      <a href="gallery.html" data-i18n="navGallery">Galerie</a>
+      <a href="videos.html" data-i18n="navVideos">Videos</a>
+      <a href="calendar.html" data-i18n="navCalendar">Kalender</a>
+      <a href="shop.html" data-i18n="navShop">Shop</a>
+      <a href="donations.html" data-i18n="navDonations">Donations</a>
+      <a href="apply.html" class="nav-cta" data-i18n="navApply">Bewerben</a>
       <button id="langToggle" class="lang-toggle" type="button">EN</button>
     </nav>
   </header>
 
-  <main id="home">
+  <main>
     <section class="hero scene">
       <div class="hero-bg" data-depth="0.12"></div>
       <div class="dragon-silhouette" data-depth="0.3" aria-hidden="true"></div>
       <div class="hero-content reveal" data-depth="0.06">
         <p class="eyebrow">Call of Dragons · Server 343</p>
         <h1><span>BDss</span> Badass Crew</h1>
-        <p class="lead" data-i18n="heroLead">Aktive Allianz, klare Kommunikation und starker Zusammenhalt. Wachse mit uns, kämpfe mit uns und dominiere Events gemeinsam mit der Crew.</p>
+        <p class="lead">Aktive Allianz, klare Kommunikation und starker Zusammenhalt. Wähle einen Bereich und finde direkt, was du suchst.</p>
         <div class="actions">
-          <a class="btn primary" href="#apply" data-i18n="applyNow">Jetzt bewerben</a>
-          <a class="btn ghost" href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a>
+          <a class="btn primary" href="apply.html" data-i18n="applyNow">Jetzt bewerben</a>
+          <a class="btn ghost" href="team.html">Team ansehen</a>
         </div>
         <div class="social-mini">
           <a href="https://badass-crew.netlify.app/" data-social="website" target="_blank" rel="noreferrer">Website</a>
@@ -72,117 +76,34 @@
     </section>
 
     <section class="value-grid reveal" aria-label="BDss Werte">
-      <article><span>⚔</span><h3 data-i18n="value1Title">Aktive Allianz</h3><p data-i18n="value1Text">Gemeinsam stark, gemeinsam siegreich.</p></article>
-      <article><span>🛡</span><h3 data-i18n="value2Title">Teamplay</h3><p data-i18n="value2Text">Zusammenhalt und Unterstützung stehen bei uns vorne.</p></article>
-      <article><span>🔥</span><h3 data-i18n="value3Title">Events</h3><p data-i18n="value3Text">Regelmäßige Aktionen und Belohnungen.</p></article>
-      <article><span>📈</span><h3 data-i18n="value4Title">Wachstum</h3><p data-i18n="value4Text">Wir wachsen weiter und erreichen gemeinsame Ziele.</p></article>
-      <article><span>🕒</span><h3 data-i18n="value5Title">Real Life geht vor</h3><p data-i18n="value5Text">Spaß am Spiel, aber Respekt vor deinem Alltag.</p></article>
+      <article><span>⚔</span><h3>Aktive Allianz</h3><p>Gemeinsam stark, gemeinsam siegreich.</p></article>
+      <article><span>🛡</span><h3>Teamplay</h3><p>Zusammenhalt und Unterstützung stehen bei uns vorne.</p></article>
+      <article><span>🔥</span><h3>Events</h3><p>Regelmäßige Aktionen und Belohnungen.</p></article>
+      <article><span>📈</span><h3>Wachstum</h3><p>Wir wachsen weiter und erreichen gemeinsame Ziele.</p></article>
+      <article><span>🕒</span><h3>Real Life geht vor</h3><p>Spaß am Spiel, aber Respekt vor deinem Alltag.</p></article>
     </section>
 
-    <section id="alliance" class="split reveal">
-      <div>
-        <p class="eyebrow" data-i18n="aboutEyebrow">Über uns</p>
-        <h2 data-i18n="aboutTitle">Eine Crew. Ein Ziel.</h2>
-        <p data-i18n="aboutText">BDss ist für Spieler, die aktiv sind, mitdenken und nicht nur nebenbei in einer Allianz sitzen wollen. Wir setzen auf Respekt, Unterstützung, klare Ansagen und gemeinsame Entwicklung.</p>
+    <section class="page-shell reveal">
+      <p class="eyebrow">Bereiche</p>
+      <h2>Wohin willst du?</h2>
+      <div class="hub-grid">
+        <a class="hub-card" href="alliance.html"><span>01</span><h3>Allianz</h3><p>Werte, Erwartungen und wofür BDss steht.</p></a>
+        <a class="hub-card" href="team.html"><span>02</span><h3>Team</h3><p>R5-Ebene, Rollen und Crew-Struktur.</p></a>
+        <a class="hub-card" href="dashboard.html"><span>03</span><h3>Dashboard</h3><p>Server, Mitglieder und Event-Countdown auf einen Blick.</p></a>
+        <a class="hub-card" href="news.html"><span>04</span><h3>News</h3><p>Aktuelle Meldungen und Community-Hinweise.</p></a>
+        <a class="hub-card" href="gallery.html"><span>05</span><h3>Galerie</h3><p>BDss Grafiken, Banner und Recruiting-Bilder.</p></a>
+        <a class="hub-card" href="shop.html"><span>06</span><h3>Shop</h3><p>Vorbereiteter Bereich für spätere Crew-Angebote.</p></a>
+        <a class="hub-card" href="donations.html"><span>07</span><h3>Donations</h3><p>Unterstützung für Server, Events und Community.</p></a>
+        <a class="hub-card" href="calendar.html"><span>08</span><h3>Kalender</h3><p>Termine, Events und geplante Aktivitäten.</p></a>
+        <a class="hub-card" href="apply.html"><span>09</span><h3>Bewerbung</h3><p>Bereite deine Bewerbung für Discord vor.</p></a>
       </div>
-      <div class="panel hover-card">
-        <h3 data-i18n="expectTitle">Was dich erwartet</h3>
-        <ul>
-          <li data-i18n="expect1">Aktive Allianz-Events</li>
-          <li data-i18n="expect2">Discord-Community</li>
-          <li data-i18n="expect3">Hilfe beim Wachstum</li>
-          <li data-i18n="expect4">Faire und verständliche Regeln</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="dashboard" class="dashboard reveal">
-      <p class="eyebrow">BDss Command Center</p>
-      <h2 data-i18n="dashTitle">Allianz-Dashboard</h2>
-      <div class="stat-grid">
-        <article><strong>343</strong><span>Server</span></article>
-        <article><strong id="memberCount">70+</strong><span data-i18n="membersActive">Aktive Spieler</span></article>
-        <article><strong id="countdown">--:--:--</strong><span data-i18n="nextEvent">Nächstes Event</span></article>
-        <article><strong>BDss</strong><span>Badass Crew</span></article>
-      </div>
-    </section>
-
-    <section id="members" class="members reveal">
-      <p class="eyebrow" data-i18n="membersEyebrow">Crew-Struktur</p>
-      <h2 data-i18n="membersTitle">Team & R5-Ebene</h2>
-      <div class="member-grid" id="memberGrid"></div>
-      <div class="r5-team" id="r5-team" aria-label="R5 Leader Ebene"></div>
-    </section>
-
-    <section id="news" class="news reveal">
-      <p class="eyebrow">News</p>
-      <h2 data-i18n="newsTitle">Aktuelle Meldungen</h2>
-      <div class="news-grid" id="newsGrid"></div>
-    </section>
-
-    <section id="gallery" class="gallery reveal">
-      <p class="eyebrow" data-i18n="galleryEyebrow">Galerie</p>
-      <h2 data-i18n="galleryTitle">BDss Grafiken</h2>
-      <p class="muted" data-i18n="galleryText">Neue Bilder kannst du später im Ordner assets ergänzen und in script.js in die Galerie-Liste eintragen.</p>
-      <div class="gallery-grid" id="galleryGrid"></div>
-    </section>
-
-    <section id="videos" class="videos reveal">
-      <p class="eyebrow">YouTube</p>
-      <h2 data-i18n="videoTitle">BDss Video Hub</h2>
-      <div class="video-shell"><iframe src="https://www.youtube.com/embed?listType=user_uploads&list=bdss343" title="BDss YouTube Videos" loading="lazy" allowfullscreen></iframe></div>
-      <a class="btn ghost" href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer" data-i18n="openYoutube">YouTube öffnen</a>
-    </section>
-
-    <section class="discord reveal">
-      <div>
-        <p class="eyebrow">Discord</p>
-        <h2 data-i18n="discordTitle">Werde Teil der Crew</h2>
-        <p data-i18n="discordText">Live-Status ist vorbereitet. Sobald euer Discord-Server-Widget aktiviert ist, kann hier ein echtes Widget eingebunden werden.</p>
-      </div>
-      <a class="discord-card hover-card" href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer"><strong>BDss Discord</strong><span data-i18n="joinNow">Beitreten →</span></a>
-    </section>
-
-    <section id="calendar" class="calendar reveal">
-      <p class="eyebrow" data-i18n="calendarEyebrow">Event-Kalender</p>
-      <h2 data-i18n="calendarTitle">Nächste Termine</h2>
-      <div class="event-list" id="eventList"></div>
-    </section>
-
-    <section id="apply" class="apply reveal">
-      <div>
-        <p class="eyebrow" data-i18n="applyEyebrow">Bewerbung</p>
-        <h2 data-i18n="applyTitle">Bewirb dich bei BDss</h2>
-        <p data-i18n="applyText">Das Formular erstellt eine fertige Bewerbung. Ohne sicheren Discord-Backend-Endpunkt wird der Text kopiert, damit du ihn direkt im Discord senden kannst.</p>
-        <div class="contact-buttons">
-          <a href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a>
-          <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a>
-        </div>
-      </div>
-      <form class="apply-form" id="applyForm">
-        <label data-i18n="formName">Spielername<input name="name" required placeholder="Name im Spiel"></label>
-        <label data-i18n="formPower">Power / Stärke<input name="power" placeholder="z. B. 12 Mio"></label>
-        <label data-i18n="formDiscord">Discord-Name<input name="discord" placeholder="z. B. deinname"></label>
-        <label data-i18n="formLanguage">Sprache<input name="language" placeholder="Deutsch / Englisch"></label>
-        <label data-i18n="formMessage">Warum BDss?<textarea name="message" rows="4" placeholder="Erfahrung, Aktivität, Ziele"></textarea></label>
-        <button class="btn primary" type="submit" data-i18n="formSend">Bewerbung vorbereiten</button>
-        <p class="form-note" id="formNote" data-i18n="formNote">Tipp: Danach direkt im Discord melden.</p>
-      </form>
     </section>
   </main>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true"><button aria-label="Schließen">×</button><img alt="Galeriebild"></div>
   <button id="backTop" class="back-top" aria-label="Zurück nach oben">↑</button>
   <footer>
     <strong>BDss Badass Crew</strong>
-    <span>
-      Server 343 ·
-      <a href="https://badass-crew.netlify.app/" data-social="website" target="_blank" rel="noreferrer">Website</a> ·
-      <a href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a> ·
-      <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a> ·
-      <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a>
-    </span>
+    <span>Server 343 · <a href="https://discord.gg/4djd8aVTCr" data-social="discordInvite" target="_blank" rel="noreferrer">Discord</a> · <a href="https://www.instagram.com/badxass_crew/" data-social="instagram" target="_blank" rel="noreferrer">Instagram</a> · <a href="https://www.youtube.com/@BDss343" data-social="youtube" target="_blank" rel="noreferrer">YouTube</a></span>
   </footer>
   <script src="script.js"></script>
 </body>
