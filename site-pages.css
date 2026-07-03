@@ -110,17 +110,74 @@
   gap: 18px;
 }
 
+.menu-btn {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #050607cc;
+  box-shadow: var(--glow);
+  line-height: 1;
+}
+
 .nav {
-  gap: 10px;
+  position: fixed;
+  top: 80px;
+  right: 5vw;
+  left: auto;
+  width: min(380px, calc(100vw - 32px));
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 18px;
+  background: linear-gradient(180deg,#050607f5,#11151dee);
+  border: 1px solid var(--line);
+  border-radius: 0 0 12px 12px;
+  box-shadow: var(--glow), 0 24px 80px #000;
+  transform: translateY(-18px) scale(.98);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: .22s;
+}
+
+.nav.open {
+  display: grid;
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav a {
-  font-size: 11px;
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  border: 1px solid #ffffff12;
+  background: #02030499;
+  font-size: 12px;
+}
+
+.nav a:after {
+  display: none;
+}
+
+.nav a:hover,
+.nav a.active {
+  border-color: var(--green);
+  background: #8cff2a12;
 }
 
 .nav-cta,
 .lang-toggle {
-  padding: 10px 13px;
+  padding: 12px 13px;
+}
+
+.lang-toggle {
+  width: 100%;
 }
 
 .hero {
@@ -128,25 +185,267 @@
   padding-bottom: 56px;
 }
 
-@media (max-width: 1280px) {
-  .menu-btn {
-    display: block;
-  }
+.reaper-stage {
+  position: relative;
+  min-height: min(660px, 70vh);
+  isolation: isolate;
+  filter: drop-shadow(0 0 35px #8cff2a66);
+}
 
-  .nav {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    background: #020403;
-    padding: 24px;
-  }
+.reaper-stage:before {
+  content: "";
+  position: absolute;
+  inset: 8% 0 4%;
+  background:
+    radial-gradient(circle at 50% 34%, #8cff2a3d, transparent 26%),
+    radial-gradient(circle at 70% 40%, #8737ff55, transparent 34%),
+    linear-gradient(140deg, transparent 0 42%, #8cff2a35 43%, transparent 48% 100%);
+  filter: blur(8px);
+  animation: reaperStorm 3.2s ease-in-out infinite;
+  z-index: -2;
+}
 
-  .nav.open {
-    display: flex;
-  }
+.reaper-aura {
+  position: absolute;
+  inset: 7%;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #8cff2a00, #8cff2a99, #8737ff88, #8cff2a00);
+  filter: blur(18px);
+  opacity: .8;
+  animation: spin 9s linear infinite;
+  z-index: -1;
+}
+
+.reaper-figure {
+  position: absolute;
+  inset: 0;
+  background-image: url('banner.jpg');
+  background-size: 178%;
+  background-position: 53% 34%;
+  background-repeat: no-repeat;
+  clip-path: polygon(22% 7%, 78% 7%, 94% 48%, 80% 93%, 20% 93%, 6% 48%);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 0 80px #000, var(--glow);
+  animation: reaperBreathe 4.2s ease-in-out infinite;
+}
+
+.reaper-figure:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 36%, #8cff2a55, transparent 10%),
+    linear-gradient(90deg, #000b 0 18%, transparent 36% 64%, #000d 86% 100%);
+  mix-blend-mode: screen;
+  animation: eyePulse 1.9s ease-in-out infinite;
+}
+
+.reaper-blade {
+  position: absolute;
+  right: -3%;
+  top: 13%;
+  width: 72%;
+  height: 12px;
+  background: linear-gradient(90deg, transparent, #dfffd2, var(--green), transparent);
+  box-shadow: 0 0 24px var(--green), 0 0 55px #8737ff;
+  transform: rotate(-31deg);
+  transform-origin: 30% 50%;
+  animation: bladeSlash 2.8s ease-in-out infinite;
+}
+
+.reaper-sparks {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 16% 28%, #8cff2a 0 2px, transparent 3px),
+    radial-gradient(circle at 79% 20%, #8737ff 0 2px, transparent 3px),
+    radial-gradient(circle at 66% 78%, #8cff2a 0 2px, transparent 3px),
+    radial-gradient(circle at 32% 70%, #dfffd2 0 1px, transparent 3px);
+  animation: sparksFly 2.2s linear infinite;
+}
+
+.reaper-plaque {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  width: min(360px, 82%);
+  transform: translateX(-50%);
+  padding: 16px 20px;
+  border: 1px solid var(--green);
+  background: #020304dd;
+  text-align: center;
+  box-shadow: var(--glow);
+}
+
+.reaper-plaque strong,
+.reaper-plaque span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.reaper-plaque strong {
+  color: var(--green);
+  letter-spacing: 2px;
+}
+
+.war-strip {
+  max-width: 1220px;
+  margin: -28px auto 72px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 14px;
+}
+
+.war-strip article {
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg,#080b0df2,#10171cee 58%,#1d0d2fee);
+  box-shadow: 0 0 28px #000;
+}
+
+.war-strip article:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0 40%, #8cff2a20 42%, transparent 46% 100%);
+  transform: translateX(-100%);
+  animation: gateSweep 4s linear infinite;
+}
+
+.war-strip span {
+  display: block;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.war-strip strong {
+  display: block;
+  color: var(--green);
+  font-family: 'Bebas Neue';
+  font-size: 34px;
+  letter-spacing: 2px;
+}
+
+.battle-map {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto 92px;
+  padding: 46px 24px;
+  border-top: 1px solid var(--line);
+}
+
+.battle-map:before {
+  content: "";
+  position: absolute;
+  inset: 0 24px;
+  background: radial-gradient(circle at 70% 0%, #8cff2a24, transparent 34%), linear-gradient(135deg, #0000 0 48%, #8737ff22 49%, #0000 52% 100%);
+  pointer-events: none;
+}
+
+.battle-copy {
+  position: relative;
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.battle-copy h2 {
+  font-size: clamp(52px, 8vw, 92px);
+}
+
+.gate-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.gate-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 190px;
+  padding: 20px;
+  border: 1px solid #8cff2a66;
+  background:
+    linear-gradient(180deg,#10151dcc,#050607f2),
+    radial-gradient(circle at 50% 0%, #8cff2a44, transparent 40%);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 0 26px #000;
+  transform: skewX(-3deg);
+  transition: .25s;
+}
+
+.gate-card > * {
+  transform: skewX(3deg);
+}
+
+.gate-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0 42%, #8cff2a24 45%, transparent 49% 100%);
+  transform: translateX(-130%);
+  transition: .35s;
+}
+
+.gate-card:hover {
+  transform: skewX(-3deg) translateY(-8px) scale(1.02);
+  box-shadow: var(--glow);
+}
+
+.gate-card:hover:before {
+  transform: translateX(120%);
+}
+
+.gate-card span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--green);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.gate-card h3 {
+  margin: 0 0 12px;
+  font-size: 34px;
+}
+
+.gate-primary,
+.gate-apply {
+  grid-column: span 2;
+  background:
+    linear-gradient(135deg,#182411e8,#050607f4 62%,#24103bee),
+    radial-gradient(circle at 50% 0%, #8cff2a66, transparent 42%);
+}
+
+@keyframes reaperBreathe {
+  50% { transform: translateY(-12px) scale(1.035); filter: brightness(1.2) contrast(1.12); }
+}
+
+@keyframes eyePulse {
+  50% { opacity: .45; filter: brightness(1.55); }
+}
+
+@keyframes bladeSlash {
+  0%, 100% { transform: rotate(-31deg) translate3d(0,0,0); opacity: .72; }
+  48% { transform: rotate(-25deg) translate3d(-18px,18px,0); opacity: 1; }
+}
+
+@keyframes sparksFly {
+  to { transform: translate3d(18px,-34px,0); opacity: .25; }
+}
+
+@keyframes reaperStorm {
+  50% { opacity: .65; transform: scale(1.05) rotate(1deg); }
+}
+
+@keyframes gateSweep {
+  to { transform: translateX(130%); }
 }
 
 @media (max-width: 900px) {
@@ -159,5 +458,33 @@
 
   .page-hero {
     padding-top: 44px;
+  }
+
+  .war-strip,
+  .gate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gate-primary,
+  .gate-apply {
+    grid-column: auto;
+  }
+
+  .reaper-stage {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav {
+    right: 16px;
+  }
+
+  .reaper-stage {
+    min-height: 420px;
+  }
+
+  .reaper-figure {
+    background-size: 220%;
   }
 }
